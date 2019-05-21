@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.0 on darwin)" generated="20190521 03:33:46.493" rpa="false">
+<suite id="s1" name="Tests" source="/Users/jacksontsoi/Github/Robot-Framework-On-Yelp/tests">
+<suite id="s1-s1" name="Test Oakland" source="/Users/jacksontsoi/Github/Robot-Framework-On-Yelp/tests/test_oakland.robot">
+<test id="s1-s1-t1" name="Search Food in Oakland and Select First Business">
+<kw name="Open Browser to Url" library="resource" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190521 03:33:46.650" level="INFO">Opening browser 'Chrome' to base url 'https://www.yelp.com/'.</msg>
+<status status="PASS" starttime="20190521 03:33:46.650" endtime="20190521 03:33:52.587"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:33:46.649" endtime="20190521 03:33:52.588"></status>
+</kw>
+<kw name="Search Food in Oakland">
+<kw name="Input Food" library="resource">
+<arguments>
+<arg>food</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:find_desc</arg>
+<arg>${food}</arg>
+</arguments>
+<msg timestamp="20190521 03:33:52.589" level="INFO">Typing text 'food' into text field 'id:find_desc'.</msg>
+<status status="PASS" starttime="20190521 03:33:52.589" endtime="20190521 03:33:52.707"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:33:52.589" endtime="20190521 03:33:52.707"></status>
+</kw>
+<kw name="Input Location" library="resource">
+<arguments>
+<arg>Oakland, CA</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:dropperText_Mast</arg>
+<arg>${location}</arg>
+</arguments>
+<msg timestamp="20190521 03:33:52.708" level="INFO">Typing text 'Oakland, CA' into text field 'id:dropperText_Mast'.</msg>
+<status status="PASS" starttime="20190521 03:33:52.707" endtime="20190521 03:33:52.838"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:33:52.707" endtime="20190521 03:33:52.839"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id:header-search-submit</arg>
+</arguments>
+<msg timestamp="20190521 03:33:52.839" level="INFO">Clicking button 'id:header-search-submit'.</msg>
+<status status="PASS" starttime="20190521 03:33:52.839" endtime="20190521 03:34:00.094"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:33:52.588" endtime="20190521 03:34:00.094"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="wrap"]/div[3]/div[2]/div[2]/div/div[1]/div[1]/div/ul/li[2]/div/div/div/div[2]/div[1]/div[1]/div[1]/div[1]</arg>
+</arguments>
+<msg timestamp="20190521 03:34:00.094" level="INFO">Clicking element 'xpath://*[@id="wrap"]/div[3]/div[2]/div[2]/div/div[1]/div[1]/div/ul/li[2]/div/div/div/div[2]/div[1]/div[1]/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20190521 03:34:00.094" endtime="20190521 03:34:04.503"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190521 03:34:04.504" endtime="20190521 03:34:04.629"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:33:46.649" endtime="20190521 03:34:04.629" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Search Food in Oakland by Price">
+<kw name="Open Browser to Url" library="resource" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190521 03:34:04.631" level="INFO">Opening browser 'Chrome' to base url 'https://www.yelp.com/'.</msg>
+<status status="PASS" starttime="20190521 03:34:04.631" endtime="20190521 03:34:10.643"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:04.630" endtime="20190521 03:34:10.643"></status>
+</kw>
+<kw name="Search Food in Oakland">
+<kw name="Input Food" library="resource">
+<arguments>
+<arg>food</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:find_desc</arg>
+<arg>${food}</arg>
+</arguments>
+<msg timestamp="20190521 03:34:10.645" level="INFO">Typing text 'food' into text field 'id:find_desc'.</msg>
+<status status="PASS" starttime="20190521 03:34:10.645" endtime="20190521 03:34:10.775"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:10.644" endtime="20190521 03:34:10.775"></status>
+</kw>
+<kw name="Input Location" library="resource">
+<arguments>
+<arg>Oakland, CA</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:dropperText_Mast</arg>
+<arg>${location}</arg>
+</arguments>
+<msg timestamp="20190521 03:34:10.776" level="INFO">Typing text 'Oakland, CA' into text field 'id:dropperText_Mast'.</msg>
+<status status="PASS" starttime="20190521 03:34:10.776" endtime="20190521 03:34:10.926"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:10.775" endtime="20190521 03:34:10.926"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id:header-search-submit</arg>
+</arguments>
+<msg timestamp="20190521 03:34:10.926" level="INFO">Clicking button 'id:header-search-submit'.</msg>
+<status status="PASS" starttime="20190521 03:34:10.926" endtime="20190521 03:34:20.241"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:10.644" endtime="20190521 03:34:20.241"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>name:all_filters_toggle</arg>
+</arguments>
+<msg timestamp="20190521 03:34:20.242" level="INFO">Clicking element 'name:all_filters_toggle'.</msg>
+<status status="PASS" starttime="20190521 03:34:20.241" endtime="20190521 03:34:20.368"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="wrap"]/div[3]/div[2]/div[1]/div/div/div[3]/div[1]/div[2]/ul/li[1]/div</arg>
+</arguments>
+<msg timestamp="20190521 03:34:20.369" level="INFO">Clicking element 'xpath://*[@id="wrap"]/div[3]/div[2]/div[1]/div/div/div[3]/div[1]/div[2]/ul/li[1]/div'.</msg>
+<status status="PASS" starttime="20190521 03:34:20.369" endtime="20190521 03:34:20.761"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190521 03:34:20.761" endtime="20190521 03:34:20.859"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:04.630" endtime="20190521 03:34:20.859" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="Search Food in Oakland by Most Reviewed">
+<kw name="Open Browser to Url" library="resource" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190521 03:34:20.861" level="INFO">Opening browser 'Chrome' to base url 'https://www.yelp.com/'.</msg>
+<status status="PASS" starttime="20190521 03:34:20.861" endtime="20190521 03:34:27.015"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:20.860" endtime="20190521 03:34:27.016"></status>
+</kw>
+<kw name="Search Food in Oakland">
+<kw name="Input Food" library="resource">
+<arguments>
+<arg>food</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:find_desc</arg>
+<arg>${food}</arg>
+</arguments>
+<msg timestamp="20190521 03:34:27.018" level="INFO">Typing text 'food' into text field 'id:find_desc'.</msg>
+<status status="PASS" starttime="20190521 03:34:27.017" endtime="20190521 03:34:27.161"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:27.017" endtime="20190521 03:34:27.161"></status>
+</kw>
+<kw name="Input Location" library="resource">
+<arguments>
+<arg>Oakland, CA</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:dropperText_Mast</arg>
+<arg>${location}</arg>
+</arguments>
+<msg timestamp="20190521 03:34:27.162" level="INFO">Typing text 'Oakland, CA' into text field 'id:dropperText_Mast'.</msg>
+<status status="PASS" starttime="20190521 03:34:27.162" endtime="20190521 03:34:27.257"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:27.161" endtime="20190521 03:34:27.257"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id:header-search-submit</arg>
+</arguments>
+<msg timestamp="20190521 03:34:27.257" level="INFO">Clicking button 'id:header-search-submit'.</msg>
+<status status="PASS" starttime="20190521 03:34:27.257" endtime="20190521 03:34:36.380"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:27.016" endtime="20190521 03:34:36.380"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>name:all_filters_toggle</arg>
+</arguments>
+<msg timestamp="20190521 03:34:36.381" level="INFO">Clicking element 'name:all_filters_toggle'.</msg>
+<status status="PASS" starttime="20190521 03:34:36.381" endtime="20190521 03:34:36.471"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="wrap"]/div[3]/div[2]/div[1]/div/div/div[3]/div[2]/div/div/div[1]/div/ul/li[3]/label</arg>
+</arguments>
+<msg timestamp="20190521 03:34:36.471" level="INFO">Clicking element 'xpath://*[@id="wrap"]/div[3]/div[2]/div[1]/div/div/div[3]/div[2]/div/div/div[1]/div/ul/li[3]/label'.</msg>
+<status status="PASS" starttime="20190521 03:34:36.471" endtime="20190521 03:34:36.739"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190521 03:34:36.740" endtime="20190521 03:34:36.837"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:20.860" endtime="20190521 03:34:36.837" critical="yes"></status>
+</test>
+<doc>A test suite testing search options for food in Oakland
+Testing selection, filter by price, filter by review count</doc>
+<status status="PASS" starttime="20190521 03:33:46.516" endtime="20190521 03:34:36.839"></status>
+</suite>
+<suite id="s1-s2" name="Test San Jose" source="/Users/jacksontsoi/Github/Robot-Framework-On-Yelp/tests/test_san_jose.robot">
+<test id="s1-s2-t1" name="Search Food in San Jose and Select First Business">
+<kw name="Open Browser to Url" library="resource" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190521 03:34:36.846" level="INFO">Opening browser 'Chrome' to base url 'https://www.yelp.com/'.</msg>
+<status status="PASS" starttime="20190521 03:34:36.846" endtime="20190521 03:34:41.468"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:36.846" endtime="20190521 03:34:41.469"></status>
+</kw>
+<kw name="Search Food in San Jose">
+<kw name="Input Food" library="resource">
+<arguments>
+<arg>food</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:find_desc</arg>
+<arg>${food}</arg>
+</arguments>
+<msg timestamp="20190521 03:34:41.470" level="INFO">Typing text 'food' into text field 'id:find_desc'.</msg>
+<status status="PASS" starttime="20190521 03:34:41.470" endtime="20190521 03:34:41.593"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:41.469" endtime="20190521 03:34:41.593"></status>
+</kw>
+<kw name="Input Location" library="resource">
+<arguments>
+<arg>San Jose, CA</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:dropperText_Mast</arg>
+<arg>${location}</arg>
+</arguments>
+<msg timestamp="20190521 03:34:41.593" level="INFO">Typing text 'San Jose, CA' into text field 'id:dropperText_Mast'.</msg>
+<status status="PASS" starttime="20190521 03:34:41.593" endtime="20190521 03:34:41.720"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:41.593" endtime="20190521 03:34:41.720"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id:header-search-submit</arg>
+</arguments>
+<msg timestamp="20190521 03:34:41.720" level="INFO">Clicking button 'id:header-search-submit'.</msg>
+<status status="PASS" starttime="20190521 03:34:41.720" endtime="20190521 03:34:49.902"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:41.469" endtime="20190521 03:34:49.902"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="wrap"]/div[3]/div[2]/div[2]/div/div[1]/div[1]/div/ul/li[2]/div/div/div/div[2]/div[1]/div[1]/div[1]/div[1]</arg>
+</arguments>
+<msg timestamp="20190521 03:34:49.903" level="INFO">Clicking element 'xpath://*[@id="wrap"]/div[3]/div[2]/div[2]/div/div[1]/div[1]/div/ul/li[2]/div/div/div/div[2]/div[1]/div[1]/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20190521 03:34:49.902" endtime="20190521 03:34:54.842"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190521 03:34:54.842" endtime="20190521 03:34:54.950"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:36.845" endtime="20190521 03:34:54.950" critical="yes"></status>
+</test>
+<test id="s1-s2-t2" name="Search Food in San Jose by Price">
+<kw name="Open Browser to Url" library="resource" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190521 03:34:54.951" level="INFO">Opening browser 'Chrome' to base url 'https://www.yelp.com/'.</msg>
+<status status="PASS" starttime="20190521 03:34:54.951" endtime="20190521 03:35:01.652"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:54.951" endtime="20190521 03:35:01.652"></status>
+</kw>
+<kw name="Search Food in San Jose">
+<kw name="Input Food" library="resource">
+<arguments>
+<arg>food</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:find_desc</arg>
+<arg>${food}</arg>
+</arguments>
+<msg timestamp="20190521 03:35:01.654" level="INFO">Typing text 'food' into text field 'id:find_desc'.</msg>
+<status status="PASS" starttime="20190521 03:35:01.654" endtime="20190521 03:35:01.775"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:35:01.653" endtime="20190521 03:35:01.775"></status>
+</kw>
+<kw name="Input Location" library="resource">
+<arguments>
+<arg>San Jose, CA</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:dropperText_Mast</arg>
+<arg>${location}</arg>
+</arguments>
+<msg timestamp="20190521 03:35:01.776" level="INFO">Typing text 'San Jose, CA' into text field 'id:dropperText_Mast'.</msg>
+<status status="PASS" starttime="20190521 03:35:01.776" endtime="20190521 03:35:01.924"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:35:01.775" endtime="20190521 03:35:01.924"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id:header-search-submit</arg>
+</arguments>
+<msg timestamp="20190521 03:35:01.925" level="INFO">Clicking button 'id:header-search-submit'.</msg>
+<status status="PASS" starttime="20190521 03:35:01.925" endtime="20190521 03:35:10.684"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:35:01.653" endtime="20190521 03:35:10.684"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>name:all_filters_toggle</arg>
+</arguments>
+<msg timestamp="20190521 03:35:10.684" level="INFO">Clicking element 'name:all_filters_toggle'.</msg>
+<status status="PASS" starttime="20190521 03:35:10.684" endtime="20190521 03:35:10.780"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="wrap"]/div[3]/div[2]/div[1]/div/div/div[3]/div[1]/div[2]/ul/li[1]/div</arg>
+</arguments>
+<msg timestamp="20190521 03:35:10.781" level="INFO">Clicking element 'xpath://*[@id="wrap"]/div[3]/div[2]/div[1]/div/div/div[3]/div[1]/div[2]/ul/li[1]/div'.</msg>
+<status status="PASS" starttime="20190521 03:35:10.781" endtime="20190521 03:35:11.200"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190521 03:35:11.200" endtime="20190521 03:35:11.299"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:34:54.950" endtime="20190521 03:35:11.300" critical="yes"></status>
+</test>
+<test id="s1-s2-t3" name="Search Food in San Jose by Most Reviewed">
+<kw name="Open Browser to Url" library="resource" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190521 03:35:11.302" level="INFO">Opening browser 'Chrome' to base url 'https://www.yelp.com/'.</msg>
+<status status="PASS" starttime="20190521 03:35:11.301" endtime="20190521 03:35:17.537"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:35:11.301" endtime="20190521 03:35:17.538"></status>
+</kw>
+<kw name="Search Food in San Jose">
+<kw name="Input Food" library="resource">
+<arguments>
+<arg>food</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:find_desc</arg>
+<arg>${food}</arg>
+</arguments>
+<msg timestamp="20190521 03:35:17.539" level="INFO">Typing text 'food' into text field 'id:find_desc'.</msg>
+<status status="PASS" starttime="20190521 03:35:17.539" endtime="20190521 03:35:17.661"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:35:17.538" endtime="20190521 03:35:17.661"></status>
+</kw>
+<kw name="Input Location" library="resource">
+<arguments>
+<arg>San Jose, CA</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:dropperText_Mast</arg>
+<arg>${location}</arg>
+</arguments>
+<msg timestamp="20190521 03:35:17.662" level="INFO">Typing text 'San Jose, CA' into text field 'id:dropperText_Mast'.</msg>
+<status status="PASS" starttime="20190521 03:35:17.661" endtime="20190521 03:35:17.787"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:35:17.661" endtime="20190521 03:35:17.787"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id:header-search-submit</arg>
+</arguments>
+<msg timestamp="20190521 03:35:17.787" level="INFO">Clicking button 'id:header-search-submit'.</msg>
+<status status="PASS" starttime="20190521 03:35:17.787" endtime="20190521 03:35:27.155"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:35:17.538" endtime="20190521 03:35:27.155"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>name:all_filters_toggle</arg>
+</arguments>
+<msg timestamp="20190521 03:35:27.156" level="INFO">Clicking element 'name:all_filters_toggle'.</msg>
+<status status="PASS" starttime="20190521 03:35:27.156" endtime="20190521 03:35:27.256"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="wrap"]/div[3]/div[2]/div[1]/div/div/div[3]/div[2]/div/div/div[1]/div/ul/li[3]/label</arg>
+</arguments>
+<msg timestamp="20190521 03:35:27.257" level="INFO">Clicking element 'xpath://*[@id="wrap"]/div[3]/div[2]/div[1]/div/div/div[3]/div[2]/div/div/div[1]/div/ul/li[3]/label'.</msg>
+<status status="PASS" starttime="20190521 03:35:27.257" endtime="20190521 03:35:27.697"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190521 03:35:27.697" endtime="20190521 03:35:27.797"></status>
+</kw>
+<status status="PASS" starttime="20190521 03:35:11.300" endtime="20190521 03:35:27.797" critical="yes"></status>
+</test>
+<doc>A test suite testing search options for food in San Jose
+Testing selection, filter by price, filter by review count</doc>
+<status status="PASS" starttime="20190521 03:34:36.841" endtime="20190521 03:35:27.798"></status>
+</suite>
+<status status="PASS" starttime="20190521 03:33:46.495" endtime="20190521 03:35:27.801"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0">Critical Tests</stat>
+<stat pass="6" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="0" id="s1-s1" name="Test Oakland">Tests.Test Oakland</stat>
+<stat pass="3" fail="0" id="s1-s2" name="Test San Jose">Tests.Test San Jose</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
